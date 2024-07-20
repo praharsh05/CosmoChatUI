@@ -11,7 +11,7 @@ function Activity() {
   // arrange data into an array
 
   let data = [data1, data2];
-  console.log(data);
+  // console.log(data);
 
   const extractX = (arr) => {
     let timeStamps = [];
@@ -34,10 +34,11 @@ function Activity() {
     return count;
   };
 
+  // Initialize the data
   let timeSeries = extractX(data);
   let counts = extractY(data);
-  console.log(timeSeries);
-  console.log(counts);
+  // console.log(timeSeries);
+  // console.log(counts);
 
   return (
     <Container>
@@ -45,7 +46,7 @@ function Activity() {
       <BarChart
         xAxis={[{ scaleType: "band", data: timeSeries }]}
         series={[{ data: counts }]}
-        width={500}
+        width={700}
         height={800}
       />
     </Container>

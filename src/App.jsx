@@ -2,23 +2,23 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Activity from "./pages/activity";
 import MessagePanel from "./pages/messagePanel";
-import Nav from "react-bootstrap/Nav";
 import ChatSession from "./pages/chatSession";
+import Button from "./component/button";
 
 function App() {
   return (
     <Router>
-      <Nav as="ul">
-        <Nav.Item as="li">
-          <Nav.Link href="/">Home</Nav.Link>
-        </Nav.Item>
-        <Nav.Item as="li">
-          <Nav.Link href="/activity">Acitivity</Nav.Link>
-        </Nav.Item>
-        <Nav.Item as="li">
-          <Nav.Link href="/chatSession">ScottishGPT</Nav.Link>
-        </Nav.Item>
-      </Nav>
+      <div style={{
+        position: "relative",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        padding: "10px"
+      }}>
+      <Button url= "/" label="Home"/>
+      <Button url= "/activity" label="Activity"/>
+      <Button url= "/chatSession" label="ScottishGPT"/>
+      </div>
       <Routes>
         <Route path="/" element={<MessagePanel />} />
         <Route path="/activity" element={<Activity />} />

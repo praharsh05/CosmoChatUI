@@ -1,0 +1,15 @@
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* For anchor tag */
+    display: inline-block; /* For anchor tag */
+    margin: 5px; /* Add some space between buttons */
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }

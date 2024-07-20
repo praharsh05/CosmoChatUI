@@ -10,7 +10,7 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 
 const OPEN_AI_KEY = process.env.REACT_APP_OPEN_API_KEY;
-console.log("API Key: ", OPEN_AI_KEY);
+
 function ChatSession() {
   const [typing, setTyping] = useState(false);
   const [messages, setMessages] = useState([
@@ -89,7 +89,13 @@ function ChatSession() {
 
   return (
     <div className="App">
-      <div style={{ position: "relative", height: "800px", width: "700px" }}>
+      <div style={{ 
+        position: "relative", 
+        height: "800px", 
+        width: "700px", 
+        display: "flex", 
+        flexDirection: "column" 
+        }}>
         <MainContainer>
           <ChatContainer>
             <MessageList

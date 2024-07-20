@@ -16,22 +16,6 @@
       {
         "user": "Great! I might take a walk during lunch. Can you suggest a nearby park?",
         "assistant": "Sure! How about Central Park? It's just a 10-minute walk from your office and it's beautiful this time of year."
-      },
-      {
-        "user": "Sounds perfect. Also, can you play some relaxing music for me?",
-        "assistant": "Playing your Relaxing playlist now. Enjoy!"
-      },
-      {
-        "user": "Thank you! By the way, do I have any emails that need urgent attention?",
-        "assistant": "You have two new emails. One from your boss about the project deadline and another from HR about the upcoming company event."
-      },
-      {
-        "user": "Okay, I'll check those now. Anything else I should know about today?",
-        "assistant": "That's all for now. I'll notify you if anything important comes up. Have a great day!"
-      },
-      {
-        "user": "Thanks, you too!",
-        "assistant": "You're welcome!"
       }
     ]
   }
